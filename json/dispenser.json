@@ -1,0 +1,119 @@
+{
+  "product": [
+    {
+      "title":"PERIOE Original Pumping Toothpaste",
+      "dataFilter": "flower",
+      "image": "images/PERIOE_Original_Pumping_Toothpaste_01m.png",
+      "imageBg": "images/prod_bg_011.png",
+      "cardImages": [
+        {
+          "middle":"images/PERIOE_Original_Pumping_Toothpaste_01m.png",
+          "big":"images/PERIOE_Original_Pumping_Toothpaste_01.png"
+        }
+      ],
+      "description": {
+        "short":"<p>Защита от зубного камня</p><p>Охлаждающая свежесть мяты</p>",
+        "full":"<p>Зубная паста в форме геля с освежающим и бодрящим  мятным вкусом эффективно удаляет налет с поверхности зубов, предотвращает образование зубного камня, заботится о состоянии полости рта и свежести дыхания.</p>",
+        "annotation":"* Результаты клинических тестов, подтверждено стоматологами. Сравнение с обычной пастой",
+        "components":"<p><p>TETRASODIUM PYROPHOSPHATE  эффективно очищает зубы от налета и предотвращает его образование в течение всего дня.  </p><p>TOCOPHERYL ACETATE (витамин Е) - антиоксидант, укрепляет десны. </p><p>SODIUM FLUORIDE -  профилактика и защита от кариеса, а так же укрепление эмали</p></p>",
+        "consist":"<p>GLYCERIN, WATER, HYDRATED SILICA, SODIUM LAURYL SULFATE, FLAVOR, XANTHAN GUM, CELLULOSE GUM, TETRASODIUM PYROPHOSPHATE, SODIUM SACCHARIN, SODIUM FLUORIDE (1400 ppm), SORBITAN OLEATE, TOCOPHERYL ACETATE</p>"
+      },
+      "type_weight":"Гель 285 гр"
+    },
+    {
+      "title":"PERIOE Breath Care Pumping Toothpaste",
+      "dataFilter": "flower",
+      "image": "images/PERIOE-Breath-Care-Pumping-Toothpaste_01m.png",
+      "imageBg": "images/prod_bg_012.png",
+      "cardImages": [
+        {
+          "middle":"images/PERIOE-Breath-Care-Pumping-Toothpaste_01m.png",
+          "big":"images/PERIOE-Breath-Care-Pumping-Toothpaste_01.png"
+        }
+      ],
+      "description": {
+        "short":"<p>Забота о дыхании</p><p>Насыщенная свежесть трав</p>",
+        "full":"<p>Зубная паста освежающая с насыщенным вкусом мяты и трав максимально эффективно борется с неприятным запахом и  заботится о длительной свежести дыхания. Специальная  формула предотвращает образование невидимой пленки на поверхности зубов, которая является одной из причин неприятного запаха изо рта. Зубная паста имеет форму геля.</p>",
+        "components":"<p><p>TETRASODIUM PYROPHOSPHATE  эффективно очищает зубы от налета и предотвращает его образование в течение всего дня.  </p><p>TOCOPHERYL ACETATE (витамин Е) - антиоксидант, укрепляет десны. </p><p>SODIUM FLUORIDE -  профилактика и защита от кариеса, а так же укрепление эмали</p></p>",
+        "consist":"<p>GLYCERIN, WATER, HYDRATED SILICA, SODIUM LAURYL SULFATE, FLAVOR, XANTHAN GUM, CELLULOSE GUM, TETRASODIUM PYROPHOSPHATE, SODIUM SACCHARIN, SODIUM FLUORIDE  (1400 ppm), SORBITAN OLEATE, TOCOPHERYL ACETATE</p>"
+      },
+      "type_weight":"Гель 285 гр"
+    },
+    {
+      "title":"PERIOE Whitening Pumping Toothpaste",
+      "dataFilter": "fruit",
+      "image": "images/PERIOE-Whitening-Pumping-Toothpaste_01m.png",
+      "imageBg": "images/prod_bg_013.png",
+      "cardImages": [
+        {
+          "middle":"images/PERIOE-Whitening-Pumping-Toothpaste_01m.png",
+          "big":"images/PERIOE-Whitening-Pumping-Toothpaste_01.png"
+        }
+      ],
+      "description": {
+        "short":"<p>Бережное отбеливание </p><p>Освежающий вкус цитрусовых</p>",
+        "full":"<p>Отбеливающая зубная паста в форме геля с мягким и свежим цитрусовым вкусом  бережно и эффективно очищает поверхность зубов, заботится о состоянии полости рта и повышает эстетический внешний вид. Способствует устранению налета от чая, кофе и сигарет. Зубная паста имеет форму геля.</p>",
+        "components":"<p><p>TETRASODIUM PYROPHOSPHATE  эффективно очищает зубы от налета и предотвращает его образование в течение всего дня.  </p><p>TOCOPHERYL ACETATE (витамин Е) - антиоксидант, укрепляет десны. </p><p>SODIUM FLUORIDE -  профилактика и защита от кариеса, а так же укрепление эмали</p></p>",
+        "consist":"<p>GLYCERIN, WATER, HYDRATED SILICA, SODIUM LAURYL SULFATE, FLAVOR, XANTHAN GUM, CELLULOSE GUM, TETRASODIUM PYROPHOSPHATE, SODIUM SACCHARIN, SODIUM FLUORIDE  (1400 ppm), SORBITAN OLEATE, TOCOPHERYL ACETATE</p>"
+      },
+      "type_weight":"Гель 285 гр"
+    },
+    {
+      "title":"PERIOE Green Grape Pumping Toothpaste",
+      "dataFilter": "flower",
+      "image": "images/PERIOE-Green-Grape-Pumping-Toothpaste_01m.png",
+      "imageBg": "images/prod_bg_009.png",
+      "cardImages": [
+        {
+          "middle":"images/PERIOE-Green-Grape-Pumping-Toothpaste_01m.png",
+          "big":"images/PERIOE-Green-Grape-Pumping-Toothpaste_01.png"
+        }
+      ],
+      "description": {
+        "short":"<p>Свежий и сладкий аромат муската</p>",
+        "full":"<p>Зубная паста с ароматом зеленого винограда и фруктовой свежестью заботится о состоянии  полости рта, бережно и эффективно очищая поверхность зубов, придает свежесть дыханию, поддерживает состояние десен. Зубная паста имеет форму геля.</p>",
+        "components":"<p><p>TETRASODIUM PYROPHOSPHATE  эффективно очищает зубы от налета и предотвращает его образование в течение всего дня.  </p><p>TOCOPHERYL ACETATE (витамин Е) - антиоксидант, укрепляет десны. </p><p>SODIUM FLUORIDE -  профилактика и защита от кариеса, а так же укрепление эмали</p></p>",
+        "consist":"<p>GLYCERIN, WATER, HYDRATED SILICA, SODIUM LAURYL SULFATE, FLAVOR, XANTHAN GUM, CELLULOSE GUM, TETRASODIUM PYROPHOSPHATE, SODIUM SACCHARIN, SODIUM FLUORIDE (1400 ppm), SORBITAN OLEATE, TOCOPHERYL ACETATE</p>"
+      },
+      "type_weight":"Гель 285 гр"
+    },
+    {
+      "title":"PERIOE Chamomile Pumping Toothpaste",
+      "dataFilter": "flower",
+      "image": "images/PERIOE-Chamomile-Pumping-Toothpaste_01m.png",
+      "imageBg": "images/prod_bg_010.png",
+      "cardImages": [
+        {
+          "middle":"images/PERIOE-Chamomile-Pumping-Toothpaste_01m.png",
+          "big":"images/PERIOE-Chamomile-Pumping-Toothpaste_01.png"
+        }
+      ],
+      "description": {
+        "short":"<p>Забота о деснах</p><p>Аромат ромашки</p>",
+        "full":"<p>Зубная паста с ароматом ромашки и мятной свежестью заботится о состоянии  полости рта, бережно и эффективно очищая поверхность зубов, придает свежесть дыханию, поддерживает состояние десен. Зубная паста имеет форму геля.</p>",
+        "components":"<p><p>TETRASODIUM PYROPHOSPHATE  эффективно очищает зубы от налета и предотвращает его образование в течение всего дня.  </p><p>TOCOPHERYL ACETATE (витамин Е) - антиоксидант, укрепляет десны. </p><p>SODIUM FLUORIDE -  профилактика и защита от кариеса, а так же укрепление эмали</p></p>",
+        "consist":"<p>GLYCERIN, WATER, HYDRATED SILICA, SODIUM LAURYL SULFATE, FLAVOR, XANTHAN GUM, CELLULOSE GUM, TETRASODIUM PYROPHOSPHATE, SODIUM SACCHARIN, SODIUM FLUORIDE  (1400 ppm), SORBITAN OLEATE, TOCOPHERYL ACETATE</p>"
+      },
+      "type_weight":"Гель 285 гр"
+    },
+    {
+      "title":"PERIOE Grapefruit Pumping Toothpaste",
+      "dataFilter": "fruit",
+      "image": "images/PERIOE-Lime-Grapefruit-Pumping-Toothpaste_01m.png",
+      "imageBg": "images/prod_bg_024.png",
+      "cardImages": [
+        {
+          "middle":"images/PERIOE-Lime-Grapefruit-Pumping-Toothpaste_01m.png",
+          "big":"images/PERIOE-Lime-Grapefruit-Pumping-Toothpaste_01.png"
+        }
+      ],
+      "description": {
+        "short":"<p>Охлаждающая свежесть цитрусовых</p>",
+        "full":"<p>Зубная паста с ароматом охлаждающего лайма и свежего грейпфрута заботится о состоянии  полости рта, бережно и эффективно очищая поверхность зубов, придает свежесть дыханию, поддерживает состояние десен. Зубная паста имеет форму геля.</p>",
+        "components":"<p><p>TETRASODIUM PYROPHOSPHATE  эффективно очищает зубы от налета и предотвращает его образование в течение всего дня.  </p><p>TOCOPHERYL ACETATE (витамин Е) - антиоксидант, укрепляет десны. </p><p>SODIUM FLUORIDE -  профилактика и защита от кариеса, а так же укрепление эмали</p></p>",
+        "consist":"<p>GLYCERIN, WATER, HYDRATED SILICA, SODIUM LAURYL SULFATE, FLAVOR, XANTHAN GUM, CELLULOSE GUM, TETRASODIUM PYROPHOSPHATE, SODIUM SACCHARIN, SODIUM FLUORIDE  (1400 ppm), SORBITAN OLEATE, TOCOPHERYL ACETATE</p>"
+      },
+      "type_weight":"Гель 285 гр"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+<div id="tubes" class="tabs-content js-product-tabs-content active">
+    <div class="product-filter js-product-filter">
+        <div class="container">
+            <ul>
+                <li><button type="button" data-filter="all" class="active js-product-filter-button">Все</button></li>
+                <li><button type="button" data-filter="general" class="js-product-filter-button">Зубные пасты общего назначения</button></li>
+                <li><button type="button" data-filter="special" class="js-product-filter-button">Специальный уход</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="products js-products js-products--tubes">
+            {{> product-list-item paste }}
+        </div>
+    </div>
+    <div class="product-carousel js-product-carousel js-product-carousel--tubes">
+        <div class="container margin">
+            <button type="button" class="button button--back js-product-popup-close">Вернуться к списку</button>
+            <button type="button" class="button button--close js-product-popup-close"></button>
+            <div class="product-cards js-product-cards js-product-cards--tubes">
+                {{> product-card-item paste }}
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="container">
+            <div class="product-nav js-product-nav js-product-nav--tubes">
+                {{> product-nav-item paste }}
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dispenser" class="tabs-content js-product-tabs-content">
+    <div class="product-filter js-product-filter">
+        <div class="container">
+            <ul>
+                <li><button type="button" data-filter="all" class="active js-product-filter-button">Все</button></li>
+                <li><button type="button" data-filter="fruit" class="js-product-filter-button">Фруктовые</button></li>
+                <li><button type="button" data-filter="flower" class="js-product-filter-button">Цветочные</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="products js-products js-products--dispenser">
+            {{> product-list-item dispenser }}
+        </div>
+    </div>
+    <div class="product-carousel js-product-carousel js-product-carousel--dispenser">
+        <div class="container margin">
+            <button type="button" class="button button--back js-product-popup-close">Вернуться к списку</button>
+            <button type="button" class="button button--close js-product-popup-close"></button>
+            <div class="product-cards js-product-cards js-product-cards--dispenser">
+                {{> product-card-item dispenser }}
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="container">
+            <div class="product-nav js-product-nav js-product-nav--dispenser">
+                {{> product-nav-item dispenser }}
+            </div>
+        </div>
+    </div>
+</div>
+<div id="kids" class="tabs-content tabs-content--no-filter js-product-tabs-content">
+    <div class="container">
+        <div class="products js-products js-products--kids">
+            {{> product-list-item kids }}
+        </div>
+    </div>
+    <div class="product-carousel js-product-carousel js-product-carousel--kids">
+        <div class="container margin">
+            <button type="button" class="button button--back js-product-popup-close">Вернуться к списку</button>
+            <button type="button" class="button button--close js-product-popup-close"></button>
+            <div class="product-cards js-product-cards js-product-cards--kids">
+                {{> product-card-item kids }}
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="container">
+            <div class="product-nav js-product-nav js-product-nav--kids">
+                {{> product-nav-item kids }}
+            </div>
+        </div>
+    </div>
+</div>

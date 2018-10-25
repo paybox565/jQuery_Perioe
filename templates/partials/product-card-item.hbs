@@ -1,0 +1,74 @@
+{{#each product}}
+    <div class="product-card">
+        <div class="l-sides">
+            <div class="l-side-left">
+                <div class="image">
+                    <div class="big-images__wrap">
+                        <div class="big-images js-product-card-images">
+                            {{#each cardImages}}
+                                {{#if @first}}
+                                    <div class="item active">
+                                        <a href="{{this.big}}" data-fancybox="gallery_{{@../index}}_{{../this.dataFilter}}">
+                                            <img src="{{this.middle}}" alt="" />
+                                        </a>
+                                    </div>
+                                {{else}}
+                                    <div class="item">
+                                        <a href="{{this.big}}" data-fancybox="gallery_{{@../index}}_{{../this.dataFilter}}">
+                                            <img src="{{this.middle}}" alt="" />
+                                        </a>
+                                    </div>
+                                {{/if}}
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="nav-images__wrap">
+                        <div class="nav-images js-product-card-images-nav">
+                            {{#each cardImages}}
+                                {{#if @first}}
+                                    <div class="item active">
+                                        <img src="{{this.middle}}" alt="">
+                                    </div>
+                                {{else}}
+                                    <div class="item">
+                                        <img src="{{this.middle}}" alt="">
+                                    </div>
+                                {{/if}}
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="l-side-right">
+                {{#if this.newbies}}
+                    <div class="icon icon--newbies">Новинка</div>
+                {{/if}}
+                <div class="title">{{this.title}}</div>
+                <div class="short-description">{{{this.description.short}}}</div>
+                <div class="techs">{{this.type_weight}}</div>
+                <div class="description js-product-card-description">
+                    <div class="description__tabs js-description-tabs">
+                        <div data-description="full" class="item active">Описание</div>
+                        <div data-description="components" class="item">Активные компоненты</div>
+                        <div data-description="consist" class="item">Состав</div>
+                    </div>
+                    <div data-description-content="full" class="description__tabs-content js-description-tabs-content js-custom-scroll active">
+                        {{{this.description.full}}}
+                        {{#if description.annotation}}
+                            <p class="annotation">
+                                {{this.description.annotation}}
+                            </p>
+                        {{/if}}
+                        <p>Срок годности 36 месяцев</p>
+                    </div>
+                    <div data-description-content="components" class="description__tabs-content js-description-tabs-content">
+                        {{{this.description.components}}}
+                    </div>
+                    <div data-description-content="consist" class="description__tabs-content js-description-tabs-content">
+                        {{{this.description.consist}}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}

@@ -1,0 +1,14 @@
+.i-instagram {
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  background: url(../images/instagram_new-white.png) no-repeat center;
+
+  &--colored {
+    background-image: url("../images/instagram_new-colored.png");
+  }
+  &--black {
+    background-image: url("../images/instagram_new-black.png");
+  }
+}

@@ -1,0 +1,87 @@
+.block {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer {
+    padding: 16px 0;
+    background-color: $color_mercury;
+    border-top: 1px solid $color_alto;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color_boulder;
+
+    @media only screen and (max-width:767px) {
+        padding: 20px 0;
+    }
+
+    .l-side-right {
+
+        @media only screen and (max-width:767px) {
+            float: none;
+        }
+    }
+    .l-side-left {
+
+        @media only screen and (max-width:767px) {
+            float: none;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+    .container {
+        position: relative;
+    }
+    .distribution {
+        padding-top: 4px;
+
+        @media only screen and (max-width:767px) {
+            line-height: 24px;
+            padding-top: 0;
+            margin-bottom: 0;
+        }
+
+        .heavy {
+            color: black;
+        }
+    }
+    .contacts {
+
+        p {
+            padding-left: 20px;
+
+            &.address {
+                background: url(images/i_address.png) no-repeat 0 2px;
+            }
+            &.phone {
+                background: url(images/i_phone.png) no-repeat 0 5px;
+            }
+            &.web-site {
+                background: url(images/i_link.png) no-repeat 0 6px;
+            }
+            &.email {
+                background: url(images/i_email.png) no-repeat 0 8px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+
+            &.tel {
+                color: $color_boulder;
+            }
+        }
+    }
+    .hot-line {
+        color: black;
+        margin-bottom: 26px;
+
+        @media only screen and (max-width:767px) {
+            margin-bottom: 0;
+        }
+    }
+
+}

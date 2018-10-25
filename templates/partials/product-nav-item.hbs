@@ -1,0 +1,16 @@
+{{#each product}}
+    <div class="item">
+        <div class="image">
+            <img src="{{this.image}}" alt="">
+        </div>
+        <div class="title">
+            {{this.title}}
+        </div>
+        <div class="description">
+            {{this.type_weight}}
+        </div>
+        {{#if newbies}}
+            <div class="icon icon--newbies">Новинка</div>
+        {{/if}}
+    </div>
+{{/each}}

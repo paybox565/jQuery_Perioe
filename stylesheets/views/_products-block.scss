@@ -1,0 +1,789 @@
+.block {
+
+    &--products {
+        padding-bottom: 20px;
+
+        .tabs {
+            height: 160px;
+            box-shadow: inset 0px -1px 0px 0px rgba(208, 208, 208, 1);
+
+            @media only screen and (max-width:767px) {
+                height: 104px;
+            }
+
+            .menu {
+                font-size: 0;
+                line-height: 0;
+                text-align: center;
+
+                @media only screen and (max-width:767px) {
+                    display: table;
+                    width: 100%;
+                }
+
+                .item {
+                    display: inline-block;
+                    padding: 27px 10px;
+                    border-bottom: 3px solid transparent;
+                    cursor: pointer;
+                    transition: border-color 0.35s ease;
+                    margin: 0 2.5%;
+
+                    @media only screen and (max-width:767px) {
+                        display: table-cell;
+                        vertical-align: middle;
+                        height: 104px;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    &:hover {
+                        border-color: $color_cardinal;
+                    }
+                    &.active {
+                        border-color: $color_cardinal;
+                    }
+
+                    .image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 80px;
+
+                        @media only screen and (max-width:767px) {
+                            height: 34px;
+
+                            img {
+                                max-height: 100%;
+                                max-width: 40px;
+                            }
+                        }
+                    }
+                    .title {
+                        font-size: 17px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        line-height: 22px;
+                        letter-spacing: 2px;
+                        color: $color_arapawa;
+
+                        @media only screen and (max-width:1365px) {
+                            letter-spacing: initial;
+                        }
+
+                        @media only screen and (max-width:767px) {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .tabs-content {
+            max-height: 0;
+            min-height: 0;
+            visibility: hidden;
+            position: relative;
+            left: -5000px;
+            transition: left 0.35s ease, max-height 0.35s ease, min-height 0.35s ease;
+
+            &.active {
+                max-height: 5000px;
+                left: 0;
+                visibility: visible;
+
+                .product-filter {
+                    margin: 50px 0;
+                }
+            }
+            &.popup {
+                max-height: 960px;
+                min-height: 960px;
+                overflow: hidden;
+
+                @media only screen and (max-width:1365px) {
+                    max-height: 768px;
+                    min-height: 768px;
+                }
+                @media only screen and (max-width:767px) {
+                    max-height: none;
+                    min-height: 1200px;
+                }
+            }
+            &--empty {
+                text-align: center;
+
+                &.active {
+                    padding: 100px 0;
+                }
+            }
+            &--no-filter {
+
+                .product-carousel {
+                    top: 10px;
+                }
+            }
+        }
+        .product-filter {
+            transition: margin 0.35s ease;
+
+            @media only screen and (max-width:767px) {
+                margin: 20px 0;
+            }
+
+            ul {
+                list-style: none;
+                font-size: 0;
+                line-height: 0;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+
+                @media only screen and (max-width:767px) {
+                    text-align: left;
+                }
+
+                li {
+                    display: inline-block;
+                    margin: 0 8px;
+
+                    @media only screen and (max-width:767px) {
+                        margin: 0 10px 10px 0;
+                    }
+                }
+                button {
+                    display: inline-block;
+                    min-width: 86px;
+                    padding: 0 12px;
+                    font-family: $font_base;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: $color_arapawa;
+                    white-space: nowrap;
+                    background-color: white;
+                    border: 1px solid $color_arapawa;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: background-color 0.35s ease, color 0.35s ease;
+
+                    @media only screen and (max-width:767px) {
+                        min-width: 56px;
+                        font-size: 12px;
+                        line-height: 24px;
+                        padding: 0 8px;
+                    }
+
+                    &:hover {
+                        background-color: $color_arapawa;
+                        color: white;
+                    }
+                    &.active {
+                        background-color: $color_arapawa;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .products {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+
+            .item {
+                flex: 0 0 21%;
+                margin: 0 2%;
+                padding: 2%;
+                cursor: pointer;
+                position: relative;
+                transition: width 0.35s ease;
+
+                @media only screen and (max-width:1365px) {
+                    flex-grow: 1;
+                }
+                @media only screen and (max-width:1023px) {
+                    flex: 0 0 30%;
+                    margin: 0 1.5%;
+                }
+                @media only screen and (max-width:767px) {
+                    flex: 0 0 50%;
+                    margin: 0 0 5%;
+                    flex-grow: 0;
+                }
+
+                /*fck IE*/
+                @media all and (-ms-high-contrast: none) and (max-width:1023px), (-ms-high-contrast: active) {
+                    flex-basis: 26.3%;
+                }
+                @media all and (-ms-high-contrast: none) and (max-width:767px), (-ms-high-contrast: active) {
+                    flex-basis: 46%;
+                }
+
+                &:hover {
+
+                    .title {
+                        color: $color_arapawa;
+                    }
+                    .image-bg {
+                        opacity: 1;
+                    }
+                }
+                &.hidden {
+                    display: none;
+                }
+
+                .image {
+                    text-align: center;
+                    padding: 24px 0;
+                    position: relative;
+
+                    img {
+                        max-width: 204px;
+                        max-height: 204px;
+                        position: relative;
+                        z-index: 9;
+
+                        @media only screen and (max-width:1365px) {
+                            max-width: 100%;
+                        }
+                    }
+
+                }
+                .image-bg {
+                    width: 100%;
+                    text-align: center;
+                    opacity: 0;
+                    transition: opacity 0.35s ease;
+                    position: absolute;
+                    bottom: 10%;
+                    left: 0;
+                    z-index: 7;
+
+                    img {
+                        max-width: 100%;
+                    }
+
+
+                }
+                .title {
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: black;
+                    text-transform: uppercase;
+                    transition: color 0.35s ease;
+
+                    @media only screen and (max-width:767px) {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+                .description {
+                    font-size: 14px;
+                    line-height: 18px;
+
+                    @media only screen and (max-width:767px) {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+
+                    p {
+                        margin: 0;
+
+                        &.techs {
+                            color: $color_boulder;
+                        }
+                    }
+                }
+                .icon {
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding: 4px 10px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    @media only screen and (max-width:767px) {
+                        font-size: 10px;
+                        padding: 0 6px;
+                    }
+
+                    &--newbies {
+                        background-color: $color_cardinal;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .product-carousel {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            opacity: 0;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            z-index: 0;
+            visibility: hidden;
+            transform: scale(1.5);
+            transition: visibility 0.1s ease-out 0.1s, transform 0.2s ease-out 0.1s, opacity ease 0.3s;
+
+            &.active {
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+                z-index: 9;
+            }
+
+            .container {
+
+                &.margin {
+                    padding: 50px 0 0;
+                    position: relative;
+
+                    @media only screen and (max-width:1023px) {
+                        padding: 50px 0 0;
+                    }
+                    @media only screen and (max-width:767px) {
+                        padding: 50px 0 0;
+                    }
+                }
+            }
+
+            .button {
+                margin: 0;
+                padding: 0;
+                outline: none;
+                background: none;
+                border: none;
+                display: inline-block;
+                font-family: $font_base;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+
+                &--back {
+                    padding-left: 40px;
+                    background: url(images/i_arrow-left-black.png) no-repeat 0 center;
+                    font-size: 14px;
+                    line-height: 24px;
+                    height: 24px;
+                    left: $full_margin;
+
+                    @media only screen and (max-width:1365px) {
+                        left: $full_margin_1024;
+                    }
+                    @media only screen and (max-width:1023px) {
+                        left: $full_margin_768;
+                    }
+                    @media only screen and (max-width:767px) {
+                        left: $full_margin_320;
+                    }
+                }
+                &--close {
+                    background: url(images/i_cross.png) no-repeat center;
+                    height: 24px;
+                    width: 24px;
+                    right: $full_margin;
+
+                    @media only screen and (max-width:1365px) {
+                        right: $full_margin_1024;
+                    }
+                    @media only screen and (max-width:1023px) {
+                        right: $full_margin_768;
+                    }
+                    @media only screen and (max-width:767px) {
+                        right: $full_margin_320;
+                    }
+                }
+            }
+
+            .product-card {
+                padding: 0 $block_margin;
+                height: 570px;
+                transition: height 0.35s ease;
+
+                @media only screen and (max-width:1365px) {
+                    height: 420px;
+                    padding: 0 $block_margin_1024;
+                }
+                @media only screen and (max-width:1023px) {
+                    padding: 0 $block_margin_768;
+                }
+                @media only screen and (max-width:767px) {
+                    height: auto;
+                    padding: 0 $block_margin_320;
+                }
+
+                .l-side-left {
+                    width: 50%;
+
+                    @media only screen and (max-width:767px) {
+                        float: none;
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+                .l-side-right {
+                    width: 50%;
+                    padding-top: 64px;
+                    position: relative;
+
+                    @media only screen and (max-width:1365px) {
+                        padding-top: 0;
+                    }
+                    @media only screen and (max-width:767px) {
+                        float: none;
+                        width: 100%;
+                        padding: 32px $container_margin_320;
+                    }
+                }
+
+                .image {
+                    position: relative;
+
+                    .big-images {
+
+                        &__wrap {
+                            padding: 0 6px 0 80px;
+                            position: relative;
+                        }
+
+                        .item {
+                            display: none;
+                            text-align: center;
+
+                            @media only screen and (max-width:1365px) {
+                                height: 400px;
+                            }
+                            @media only screen and (max-width:767px) {
+                                height: auto;
+                            }
+
+                            &.active {
+                                display: block;
+                            }
+
+                            img {
+                                display: inline;
+                                max-width: 100%;
+                                max-height: 100%;
+                            }
+                        }
+                    }
+                    .nav-images {
+
+                        &__wrap {
+                            width: 80px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+
+                            @media only screen and (max-width:1365px) {
+                                max-height: 370px;
+                                overflow: hidden;
+                            }
+                            @media only screen and (max-width:767px) {
+                                max-height: 222px;
+                            }
+
+                            img {
+                                max-width: 74px;
+                                max-height: 74px;
+                            }
+                        }
+                        .item {
+                            padding: 2px;
+                            border: 1px solid transparent;
+                            cursor: pointer;
+                            transition: border-color 0.35s ease;
+                            background-color: rgba(255,255,255,0.5);
+
+                            &.active {
+                                border-color: $color_alto;
+                            }
+                        }
+                    }
+                }
+                .icon {
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding: 4px 10px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    position: absolute;
+                    top: 20px;
+                    left: 0;
+
+                    @media only screen and (max-width:767px) {
+                        font-size: 10px;
+                        padding: 0 6px;
+                        left: $container_margin_320;
+                        top: 10px;
+                    }
+
+                    &--newbies {
+                        background-color: $color_cardinal;
+                        color: white;
+                    }
+                }
+                .title {
+                    font-size: 32px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+
+                    @media only screen and (max-width:767px) {
+                        font-size: 20px;
+                    }
+                }
+                .short-description {
+                    color: $color_boulder;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+                .techs {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: $color_boulder;
+                    margin-bottom: 20px;
+
+                    @media only screen and (max-width:767px) {
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
+                .description {
+                    width: 80%;
+                    font-size: 16px;
+                    line-height: 24px;
+
+                    @media only screen and (max-width:767px) {
+                        width: 100%;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+                    p {
+                        margin: 14px 0;
+
+                        &.annotation {
+                            margin-top: 24px;
+                            padding-top: 40px;
+                            border-top: 1px solid $color_alto;
+                            color: $color_boulder;
+                            font-size: 14px;
+                            line-height: 20px;
+
+                            @media only screen and (max-width:767px) {
+                                font-size: 12px;
+                                line-height: 18px;
+                                margin-top: 20px;
+                                padding-top: 20px;
+                            }
+                        }
+                    }
+
+                    &__tabs {
+                        border-bottom: 1px solid $color_alto;
+                        margin-bottom: 10px;
+
+                        .item {
+                            display: inline-block;
+                            height: 56px;
+                            padding: 0 26px;
+                            font-size: 16px;
+                            color: $color_lucky_point;
+                            line-height: 54px;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 1px solid transparent;
+                            border-bottom: none;
+                            border-top-left-radius: 4px;
+                            border-top-right-radius: 4px;
+                            cursor: pointer;
+                            transition: font-weight 0.35s ease, width 0.5s ease, border-color 0.35s ease, background-color 0.35s ease;
+                            position: relative;
+                            bottom: -1px;
+
+                            @media only screen and (max-width:1365px) {
+                                padding: 0 16px;
+                                font-size: 14px;
+                            }
+                            @media only screen and (max-width:1023px) {
+                                padding: 0 10px;
+                                font-size: 12px;
+                            }
+                            @media only screen and (max-width:767px) {
+                                padding: 0 3%;
+                            }
+
+                            &.active {
+                                border-color: $color_alto;
+                                background-color: white;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    &__tabs-content {
+                        display: none;
+                        max-height: 320px;
+                        overflow: auto;
+
+                        @media only screen and (max-width:1365px) {
+                            max-height: 280px;
+                        }
+                        @media only screen and (max-width:767px) {
+                            max-height: 300px;
+                        }
+
+                        &.active {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .border {
+                width: 100%;
+                height: 1px;
+                background-color: $color_alto;
+                position: relative;
+                bottom: -12px;
+            }
+            .product-nav {
+                padding: 0 $block_margin;
+                position: relative;
+
+                @media only screen and (max-width:1365px) {
+                    padding: 0 $block_margin_1024;
+                }
+                @media only screen and (max-width:1023px) {
+                    padding: 0 $block_margin_768;
+                }
+                @media only screen and (max-width:767px) {
+                    padding: 0 $block_margin_320;
+                }
+
+                .slick-arrow {
+                    padding: 0;
+                    outline: none;
+                    background: none;
+                    border: none;
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    cursor: pointer;
+                    text-indent: 100px;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 50%;
+                    margin: -12px 0 0;
+                }
+                .slick-prev {
+                    background: url(images/i_arrow-left-black.png) no-repeat 0 center;
+                    left: 0;
+                }
+                .slick-next {
+                    background: url(images/i_arrow-right-black.png) no-repeat 0 center;
+                    right: 0;
+                }
+                .slick-slide {
+                    padding-top: 12px;
+                }
+                .slick-current {
+
+                    .item {
+                        border-color: $color_alto;
+
+                        &:after {
+                            content: '';
+                            display: inline-block;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 12px 10px 12px;
+                            border-color: transparent transparent white transparent;
+                            position: absolute;
+                            left: 50%;
+                            top: -9px;
+                            margin-left: -12px;
+                        }
+                        &:before {
+                            content: '';
+                            display: inline-block;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 12px 10px 12px;
+                            border-color: transparent transparent $color_alto transparent;
+                            position: absolute;
+                            left: 50%;
+                            top: -10px;
+                            margin-left: -12px;
+                        }
+                    }
+                }
+
+                .item {
+                    height: 280px;
+                    border-left: 1px solid transparent;
+                    border-right: 1px solid transparent;
+                    border-bottom: 1px solid transparent;
+                    padding: 48px 16px 0;
+                    cursor: pointer;
+                    position: relative;
+
+                    @media only screen and (max-width:1365px) {
+                        height: 220px;
+                        padding-top: 18px;
+                    }
+
+                    .image {
+                        font-size: 0;
+                        text-align: center;
+                        margin-bottom: 20px;
+
+                        img {
+                            display: inline-block;
+                            max-height: 114px;
+                            max-width:100%;
+                        }
+                    }
+                    .title {
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+
+                        @media only screen and (max-width:767px) {
+                            font-size: 12px;
+                            line-height: 16px;
+                        }
+                    }
+                    .description {
+                        font-size: 12px;
+                        line-height: 24px;
+                        color: $color_boulder;
+                    }
+                    .icon {
+                        display: inline-block;
+                        font-size: 8px;
+                        line-height: 12px;
+                        padding: 2px 6px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        position: absolute;
+                        top: 18px;
+                        left: 16px;
+
+                        &--newbies {
+                            background-color: $color_cardinal;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

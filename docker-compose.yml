@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+  data:
+    image: busybox:latest
+    hostname: data-docker
+    volumes:
+      - ./:/app
+    entrypoint: tail -f /dev/null
+
+  nginx:
+    build: docker/nginx
+    hostname: nginx-docker
+    ports:
+      - 127.0.0.1:85:80
+    volumes_from:
+      - data
+    volumes:
+      - ./docker/nginx/dev/vhost.conf:/etc/nginx/conf.d/vhost.conf
+      - ./docker/data/nginx/:/var/log/nginx
+      - ./docker/nginx/.htpasswd:/etc/nginx/.htpasswd
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4

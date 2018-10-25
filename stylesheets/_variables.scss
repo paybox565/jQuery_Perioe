@@ -1,0 +1,31 @@
+// Based
+$font_base: 'Lato';
+$font_base_heavy: 'Lato-heavy';
+$font_color: black;
+
+$container_margin: 48px;
+$container_margin_1024: 32px;
+$container_margin_768: 32px;
+$container_margin_320: 16px;
+
+$block_margin: 64px;
+$block_margin_1024: 32px;
+$block_margin_768: 0;
+$block_margin_320: 0;
+
+$full_margin: $block_margin + $container_margin;
+$full_margin_1024: $block_margin_1024 + $container_margin_1024;
+$full_margin_768: $block_margin_768 + $container_margin_768;
+$full_margin_320: $block_margin_320 + $container_margin_320;
+
+//Colors
+$color_lucky_point: #171867;
+$color_arapawa: #0F1169; //rgba(15,17,105,1)
+$color_froly: #f36891; //RGB: 243, 104, 145
+$color_cardinal: #cb203c;
+$color_gallery: #EFEFEF; //rgba(239,239,239,1)
+$color_mercury: #E7E7E7; //rgba(231,231,231,1)
+$color_alto: #d0d0d0; //rgba(208,208,208,1)
+$color_alto_lt: #dedede; //rgba(222,222,222,1)
+$color_boulder: #7a7a7a;
+$color_scorpion: #5F5B5C; //rgba(95,91,92,1)

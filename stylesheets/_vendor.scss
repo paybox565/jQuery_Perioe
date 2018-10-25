@@ -1,0 +1,75 @@
+@import 'node_modules/node-normalize-scss/_normalize.scss';
+@import 'node_modules/slick-carousel/slick/slick.scss';
+@import 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
+@import 'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar';
+
+.slick-arrow {
+    display: inline-block;
+    width: 24px;
+    height: 45px;
+    background: url(images/slider-arrow-next.pnh) no-repeat 0 0;
+    outline: none;
+    border: none;
+    padding: 0;
+    text-indent: -100px;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin: -22px 0 0;
+    z-index: 9;
+
+    &.slick-next {
+        background: url(images/slider-arrow-next.png) no-repeat 0 0;
+        right: 10px;
+    }
+    &.slick-prev {
+        background: url(images/slider-arrow-prev.png) no-repeat 0 0;
+        left: 10px;
+    }
+}
+.slick-dots {
+    display: block;
+    width: 320px;
+    font-size: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    margin-left: -160px;
+
+    li {
+        display: inline-block;
+        opacity: 0.3;
+        margin: 0 4px;
+
+        &.slick-active {
+            opacity: 1;
+        }
+
+        button {
+            display: inline-block;
+            background-color: $color_lucky_point;
+            width: 8px;
+            height: 8px;
+            outline: none;
+            border: none;
+            border-radius: 50%;
+            padding: 0;
+            text-indent: -100px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+    }
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: rgba(0,0,0,0.35);
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+    background-color: rgba(0,0,0,0.4);
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+    background-color: rgba(0,0,0,0.5);
+}

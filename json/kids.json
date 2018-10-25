@@ -1,0 +1,50 @@
+{
+  "product": [
+    {
+      "title": "Perioe Safe Kids Green Grape",
+      "dataFilter": "general",
+      "image": "images/Perioe_KIDS_green_01m.png",
+      "imageBg": "images/prod_bg_022.png",
+      "cardImages": [
+        {
+          "middle": "images/Perioe_KIDS_green_01m.png",
+          "big": "images/Perioe_KIDS_green_01.png"
+        },
+        {
+          "middle": "images/Perioe_KIDS_green_02m.png",
+          "big": "images/Perioe_KIDS_green_02.png"
+        }
+      ],
+      "description": {
+        "short": "<p>Зубная паста для детей от 3 лет</p><p>Со вкусом винограда</p>",
+        "full": "<p>Не содержит фтора, искусственных ароматизаторов,  красителей и парабенов.</p>Только безопасные ингредиенты для ваших детей – безвредна при проглатывании.<p><p>Со вкусом винограда или вишни.</p><p>Для детей от 3 лет</p>",
+        "components": "<p>На основе натуральных ингредиентов:</p><ul><li>MAGNOLIA OBOVATA BARK EXTRACT (экстракт магнолии) обладает противовоспалительным действием и обеспечивает профилактику кариеса.</li><li>ORYZA SATIVA (RICE) BRAN OIL (масло рисовых отрубей)  обладает антиоксидантным и противовоспалительным эффектом, укрепляет десны.</li><li>GLUCOSYL STEVIOSIDE - натуральный подсластитель из листьев стевии.</li></ul>",
+        "consist": "<p>GLYCERIN, WATER, HYDRATED SILICA, CELLULOSE GUM, FRAGRANCE, TETRASODIUM PYROPHOSPHATE, GLUCOSYL STEVIOSIDE, ORYZA SATIVA (RICE) BRAN OIL, CELLULOSE, MAGNOLIA OBOVATA BARK EXTRACT</p>"
+      },
+      "type_weight": "Гель 80 г"
+    },
+    {
+      "title": "Perioe Safe Kids  Cherry",
+      "dataFilter": "general",
+      "image": "images/Perioe_KIDS_pink_01m.png",
+      "imageBg": "images/prod_bg_023.png",
+      "cardImages": [
+        {
+          "middle": "images/Perioe_KIDS_pink_01m.png",
+          "big": "images/Perioe_KIDS_pink_01.png"
+        },
+        {
+          "middle": "images/Perioe_KIDS_pink_02m.png",
+          "big": "images/Perioe_KIDS_pink_02.png"
+        }
+      ],
+      "description": {
+        "short": "<p>Зубная паста для детей от 3 лет</p><p>Со вкусом вишни</p>",
+        "full": "<p>Не содержит фтора, искусственных ароматизаторов,  красителей и парабенов.</p>Только безопасные ингредиенты для ваших детей – безвредна при проглатывании.<p><p>Со вкусом винограда или вишни.</p><p>Для детей от 3 лет</p>",
+        "components": "<p>На основе натуральных ингредиентов:</p><ul><li>MAGNOLIA OBOVATA BARK EXTRACT (экстракт магнолии) обладает противовоспалительным действием и обеспечивает профилактику кариеса.</li><li>ORYZA SATIVA (RICE) BRAN OIL (масло рисовых отрубей)  обладает антиоксидантным и противовоспалительным эффектом, укрепляет десны.</li><li>GLUCOSYL STEVIOSIDE - натуральный подсластитель из листьев стевии.</li></ul>",
+        "consist": "<p>GLYCERIN, WATER, HYDRATED SILICA, CELLULOSE GUM, FRAGRANCE, TETRASODIUM PYROPHOSPHATE, GLUCOSYL STEVIOSIDE, ORYZA SATIVA (RICE) BRAN OIL, CELLULOSE, MAGNOLIA OBOVATA BARK EXTRACT</p>"
+      },
+      "type_weight": "Гель 80 г"
+    }
+  ]
+}

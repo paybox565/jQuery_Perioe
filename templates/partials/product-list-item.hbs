@@ -1,0 +1,20 @@
+{{#each product}}
+    <div data-filter="{{this.dataFilter}}" class="item js-product-item">
+        <div class="image">
+            <img src="{{this.image}}" alt="">
+            <div class="image-bg">
+                <img src="{{this.imageBg}}" alt="">
+            </div>
+        </div>
+        <div class="title">
+            {{this.title}}
+        </div>
+        <div class="description">
+            {{{this.description.short}}}
+            <p class="techs">{{this.type_weight}}</p>
+        </div>
+        {{#if newbies}}
+            <div class="icon icon--newbies">Новинка</div>
+        {{/if}}
+    </div>
+{{/each}}

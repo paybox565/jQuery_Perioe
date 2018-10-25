@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  data:
+    restart: always
+
+  nginx:
+    restart: always
+    volumes:
+      - ./docker/nginx/prod/vhost.conf:/etc/nginx/conf.d/vhost.conf
