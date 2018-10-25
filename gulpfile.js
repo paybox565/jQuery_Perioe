@@ -171,11 +171,11 @@ gulp.task('scripts', function () {
         bundler.on('log', gutil.log); // output build logs to terminal
     }
 
-    bundler.transform(babelify.configure({
-        // Optional ignore regex - if any filenames **do** match this regex then
-        // they aren't compiled
-        ignore: /templates/
-    }));
+    // bundler.transform(babelify.configure({
+    //     // Optional ignore regex - if any filenames **do** match this regex then
+    //     // they aren't compiled
+    //     ignore: /templates/
+    // }));
     bundler.transform(envify({
         NODE_ENV: isProduction ? 'production' : 'development'
     }));
