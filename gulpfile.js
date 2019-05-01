@@ -52,6 +52,12 @@ var config = {
         'watch': srcRoot + '/javascripts/**/*.js'
     },
 
+    'test_scripts': {
+        'src': 'quiz.js',
+        'dest': targetRoot,
+        'bundleName': 'quiz_done.js'
+    },
+
     'index': {
         'src': srcRoot + '/*.html',
         'dest': targetRoot
@@ -202,6 +208,14 @@ gulp.task('js_scripts', function() {
         .bundle()
         .pipe(source(config.scripts.bundleName))
         .pipe(gulp.dest(config.scripts.dest))
+});
+
+gulp.task('js_scripts_test', function() {
+    return browserify({ entries: config.test_scripts.src, debug: true})
+        .transform(babelify)
+        .bundle()
+        .pipe(source(config.test_scripts.bundleName))
+        .pipe(gulp.dest(config.test_scripts.dest))
 });
 
 gulp.task('index', ['renderHtml'], function () {

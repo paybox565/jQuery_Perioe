@@ -47,6 +47,7 @@
   "dependencies": {
     "base64-arraybuffer": "^0.1.5",
     "brfs": "^1.4.3",
+    "fernet": "^0.3.1",
     "jquery": "^3.2.1",
     "lato-webfont": "^2.15.1"
   }
